@@ -66,7 +66,7 @@ This is designed mainly for Microinverters from the X1-Micro range.
 
 Run the script directly:
 ```bash
-python solax_mqtt_publisher.py
+python solax_mqtt.py
 ```
 
 The script will:
@@ -86,7 +86,7 @@ To keep the script running in the background, use one of the following methods:
    ```
 2. Run the script:
    ```bash
-   python solax_mqtt_publisher.py
+   python solax_mqtt.py
    ```
 3. Detach from the session (leave it running in the background):
    ```bash
@@ -105,7 +105,7 @@ To keep the script running in the background, use one of the following methods:
 2. Create a configuration file for the script (e.g., `/etc/supervisor/conf.d/solax_mqtt.conf`):
    ```plaintext
    [program:solax_mqtt]
-   command=python /path/to/solax_mqtt_publisher.py
+   command=python /path/to/solax_mqtt.py
    autostart=true
    autorestart=true
    stderr_logfile=/var/log/solax_mqtt.err.log
